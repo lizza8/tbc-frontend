@@ -61,6 +61,17 @@
             <a class="btn btn-blue btn-lg" href="#code-lab">ნახე კოდი →</a>
             <a class="btn btn-white btn-lg" href="#crew">გაიცანი გუნდი</a>
           </div>
+          <div class="hero-xp">
+            <div class="hero-xp-head">
+              <span>🎮 შენი პროგრესი</span>
+              <strong>Lvl 7 · 680 XP</strong>
+            </div>
+            <div class="xp-bar"><i style="width:68%"></i></div>
+            <div class="hero-xp-meta">
+              <span>🔥 5 დღის streak</span>
+              <span>🏅 8 ბეჯი</span>
+            </div>
+          </div>
           <p class="author">ლიზა მამიტაშვილი</p>
         </div>
 
@@ -133,10 +144,41 @@
     <!-- STATS -->
     <section class="stats-bar">
       <div class="container stats-grid">
-        <div class="stat-item"><strong>248</strong><span>მოსწავლე</span></div>
-        <div class="stat-item"><strong>1 847</strong><span>ამოცანა</span></div>
-        <div class="stat-item"><strong>156</strong><span>პროექტი</span></div>
-        <div class="stat-item"><strong>42</strong><span>ბეჯი</span></div>
+        <div class="stat-item stat-hover"><strong>248</strong><span>მოსწავლე</span></div>
+        <div class="stat-item stat-hover"><strong>1 847</strong><span>ამოცანა</span></div>
+        <div class="stat-item stat-hover"><strong>156</strong><span>პროექტი</span></div>
+        <div class="stat-item stat-hover"><strong>42</strong><span>ბეჯი</span></div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="section section-soft" id="dashboard">
+      <div class="container dash-layout">
+        <div class="dash-profile">
+          <div class="dash-avatar">👩‍💻</div>
+          <h3>ანა კ.</h3>
+          <p class="dash-rank">🥇 #1 ლიდერბორდში</p>
+          <div class="dash-streak">
+            <span class="streak-fire">🔥</span>
+            <span class="streak-num">12</span>
+            <span class="streak-label">დღის streak</span>
+          </div>
+        </div>
+        <div class="dash-skills">
+          <h3>📊 უნარების პანელი</h3>
+          <div class="skill-row"><span>Python</span><div class="skill-bar"><i style="width:90%"></i></div><span>90%</span></div>
+          <div class="skill-row"><span>Web</span><div class="skill-bar"><i style="width:75%"></i></div><span>75%</span></div>
+          <div class="skill-row"><span>Algorithms</span><div class="skill-bar"><i style="width:60%"></i></div><span>60%</span></div>
+          <div class="skill-row"><span>AI</span><div class="skill-bar"><i style="width:45%"></i></div><span>45%</span></div>
+        </div>
+        <div class="dash-quests">
+          <h3>🎯 დღის მიზნები</h3>
+          <ul class="quest-list">
+            <li class="quest-done"><span>✓</span> 1 ამოცანის გადაჭრა</li>
+            <li class="quest-done"><span>✓</span> კოდის ლაბორატორია</li>
+            <li class="quest-active"><span>→</span> პროექტზე მუშაობა</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -249,6 +291,30 @@
               <span>⚡ 980 XP</span>
               <span>🏅 15 ბეჯი</span>
               <p>„ყოველთვის encrypt() — უსაფრთხოება პირველ!"</p>
+            </div>
+          </article>
+          <article class="crew-card crew-card-fox">
+            <span class="crew-level">Lvl 8</span>
+            <div class="crew-char">
+              <svg viewBox="0 0 100 110" width="80" height="88">
+                <ellipse cx="50" cy="62" rx="32" ry="28" fill="#fb923c" stroke="#1c1c28" stroke-width="3"/>
+                <polygon points="22,35 32,12 42,35" fill="#fb923c" stroke="#1c1c28" stroke-width="3"/>
+                <polygon points="58,35 68,12 78,35" fill="#fb923c" stroke="#1c1c28" stroke-width="3"/>
+                <circle cx="40" cy="58" r="5" fill="#fff"/><circle cx="60" cy="58" r="5" fill="#fff"/>
+                <circle cx="40" cy="58" r="2.5" fill="#1c1c28"/><circle cx="60" cy="58" r="2.5" fill="#1c1c28"/>
+                <ellipse cx="50" cy="72" rx="8" ry="5" fill="#1c1c28"/>
+              </svg>
+            </div>
+            <h3>CodeFox 🦊</h3>
+            <p class="crew-role">Debug & Git გური</p>
+            <p>შეცდომების პოვნა, git commit და team work.</p>
+            <div class="crew-code">
+              <code><span class="c-fn">git</span> commit -m <span class="c-str">"fix!"</span></code>
+            </div>
+            <div class="crew-hover">
+              <span>⚡ 540 XP</span>
+              <span>🏅 7 ბეჯი</span>
+              <p>„bug-ის პოვნა = დეტექტივის საქმე!"</p>
             </div>
           </article>
         </div>
@@ -421,6 +487,74 @@ guess = <span class="c-fn">int</span>(<span class="c-fn">input</span>(<span clas
       </div>
     </section>
 
+    <!-- CODE PLAYGROUND -->
+    <section class="section section-playground" id="playground">
+      <div class="container">
+        <div class="section-top">
+          <span class="tag tag-mint">⚡ Playground</span>
+          <h2>აირჩიე ენა და ნახე კოდი</h2>
+          <p class="section-desc">დააჭირე ტაბს — Python, HTML ან CSS</p>
+        </div>
+        <div class="playground">
+          <input type="radio" name="lang-tab" id="tab-py" class="tab-input" checked>
+          <input type="radio" name="lang-tab" id="tab-html" class="tab-input">
+          <input type="radio" name="lang-tab" id="tab-css" class="tab-input">
+          <div class="tab-bar">
+            <label for="tab-py" class="tab-btn">🐍 Python</label>
+            <label for="tab-html" class="tab-btn">🌍 HTML</label>
+            <label for="tab-css" class="tab-btn">🎨 CSS</label>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel panel-py">
+              <div class="code-win">
+                <div class="code-top"><span></span><span></span><span></span> playground.py</div>
+                <pre><code><span class="c-kw">class</span> <span class="c-fn">Student</span>:
+    <span class="c-kw">def</span> <span class="c-fn">__init__</span>(self, name):
+        self.name = name
+        self.xp = <span class="c-num">0</span>
+
+    <span class="c-kw">def</span> <span class="c-fn">earn</span>(self, pts):
+        self.xp += pts
+        <span class="c-kw">return</span> <span class="c-str">f"</span>{self.name}<span class="c-str"> +</span>{pts}<span class="c-str"> XP!"</span>
+
+s = <span class="c-fn">Student</span>(<span class="c-str">"ანა"</span>)
+<span class="c-fn">print</span>(s.<span class="c-fn">earn</span>(<span class="c-num">50</span>))</code></pre>
+              </div>
+              <p class="panel-tip">💡 ByteBot გირჩევს: დაიწყე class-ებით!</p>
+            </div>
+            <div class="tab-panel panel-html">
+              <div class="code-win">
+                <div class="code-top"><span></span><span></span><span></span> page.html</div>
+                <pre><code><span class="c-tag">&lt;section</span> <span class="c-attr">class</span>=<span class="c-str">"hero"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;h1&gt;</span>კომპიუტერული მეცნიერება<span class="c-tag">&lt;/h1&gt;</span>
+  <span class="c-tag">&lt;button</span> <span class="c-attr">class</span>=<span class="c-str">"btn"</span><span class="c-tag">&gt;</span>
+    დაიწყე →
+  <span class="c-tag">&lt;/button&gt;</span>
+<span class="c-tag">&lt;/section&gt;</span></code></pre>
+              </div>
+              <p class="panel-tip">💡 WebCat გირჩევს: semantic HTML!</p>
+            </div>
+            <div class="tab-panel panel-css">
+              <div class="code-win">
+                <div class="code-top"><span></span><span></span><span></span> theme.css</div>
+                <pre><code><span class="c-tag">.btn</span> {
+  <span class="c-attr">background</span>: <span class="c-str">#00AEF3</span>;
+  <span class="c-attr">border</span>: <span class="c-num">2px</span> solid <span class="c-str">#1c1c28</span>;
+  <span class="c-attr">box-shadow</span>: <span class="c-num">4px 4px</span> <span class="c-num">0</span> <span class="c-str">#1c1c28</span>;
+  <span class="c-attr">transition</span>: transform <span class="c-num">0.15s</span>;
+}
+
+<span class="c-tag">.btn</span>:hover {
+  <span class="c-attr">transform</span>: translate(<span class="c-num">-2px</span>, <span class="c-num">-2px</span>);
+}</code></pre>
+              </div>
+              <p class="panel-tip">💡 WebCat გირჩევს: neobrutalist shadow!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- WHY -->
     <section class="section" id="why">
       <div class="container">
@@ -469,6 +603,26 @@ guess = <span class="c-fn">int</span>(<span class="c-fn">input</span>(<span clas
             <div><h3>კიბერუსაფრთხოება</h3><p>10 გაკვეთილი</p></div>
             <code class="topic-snippet">hash(password)</code>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="section" id="tools">
+      <div class="container">
+        <div class="section-top">
+          <span class="tag tag-coral">🛠 ინსტრუმენტები</span>
+          <h2>რას ვიყენებთ</h2>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-chip"><span>🐍</span><strong>Python</strong><small>3.13</small></div>
+          <div class="tool-chip"><span>🌍</span><strong>VS Code</strong><small>IDE</small></div>
+          <div class="tool-chip"><span>🐙</span><strong>GitHub</strong><small>Git</small></div>
+          <div class="tool-chip"><span>🎨</span><strong>Figma</strong><small>Design</small></div>
+          <div class="tool-chip"><span>🤖</span><strong>TensorFlow</strong><small>AI</small></div>
+          <div class="tool-chip"><span>🔒</span><strong>Wireshark</strong><small>Security</small></div>
+          <div class="tool-chip"><span>📦</span><strong>npm</strong><small>JS</small></div>
+          <div class="tool-chip"><span>☁️</span><strong>Replit</strong><small>Cloud</small></div>
         </div>
       </div>
     </section>
@@ -561,6 +715,84 @@ temp = <span class="c-fn">get_weather</span>(<span class="c-str">"თბილ�
               <span>„API-ს დავუკავშირდი პირველად!" — გიორგი</span>
             </div>
           </div>
+        </div>
+
+        <div class="project-gallery">
+          <article class="mini-project">
+            <span class="mini-tag">🎮 Game</span>
+            <h4>Snake Game</h4>
+            <p>Python pygame — ნიკა ბ.</p>
+            <div class="mini-code"><code>pygame.display.update()</code></div>
+          </article>
+          <article class="mini-project">
+            <span class="mini-tag">🌐 Web</span>
+            <h4>Portfolio Site</h4>
+            <p>HTML/CSS — მარიამ ლ.</p>
+            <div class="mini-code"><code>&lt;nav&gt;...&lt;/nav&gt;</code></div>
+          </article>
+          <article class="mini-project">
+            <span class="mini-tag">🤖 AI</span>
+            <h4>Chat Bot</h4>
+            <p>Python ML — დავით ს.</p>
+            <div class="mini-code"><code>model.predict(text)</code></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="section" id="showcase">
+      <div class="container">
+        <div class="section-top">
+          <span class="tag tag-purple">✨ Showcase</span>
+          <h2>მოსწავლეთა ნამუშევრები</h2>
+          <p class="section-desc">hover — ნახე კოდის snippet</p>
+        </div>
+        <div class="showcase-grid">
+          <article class="showcase-card sc-yellow">
+            <div class="showcase-face">
+              <span class="showcase-emoji">🧮</span>
+              <h3>კალკულატორი</h3>
+              <p>JavaScript · 9ა კლასი</p>
+            </div>
+            <div class="showcase-back">
+              <code>result = eval(expr)</code>
+              <span>⭐ 4.8</span>
+            </div>
+          </article>
+          <article class="showcase-card sc-blue">
+            <div class="showcase-face">
+              <span class="showcase-emoji">🎵</span>
+              <h3>Music Player</h3>
+              <p>HTML/CSS · 10ბ კლასი</p>
+            </div>
+            <div class="showcase-back">
+              <code>audio.play()</code>
+              <span>⭐ 4.9</span>
+            </div>
+          </article>
+          <article class="showcase-card sc-mint">
+            <div class="showcase-face">
+              <span class="showcase-emoji">🔐</span>
+              <h3>Password Gen</h3>
+              <p>Python · 11 კლასი</p>
+            </div>
+            <div class="showcase-back">
+              <code>secrets.token_hex()</code>
+              <span>⭐ 5.0</span>
+            </div>
+          </article>
+          <article class="showcase-card sc-coral">
+            <div class="showcase-face">
+              <span class="showcase-emoji">📊</span>
+              <h3>Data Viz</h3>
+              <p>Python · 11 კლასი</p>
+            </div>
+            <div class="showcase-back">
+              <code>plt.bar(x, y)</code>
+              <span>⭐ 4.7</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -665,6 +897,39 @@ temp = <span class="c-fn">get_weather</span>(<span class="c-str">"თბილ�
           <article class="event"><time><b>22</b> მარ</time><div><small>ჰაკათონი</small><h3>CS ჰაკათონი 2026</h3><p>48-საათიანი შეჯიბრი 💻</p></div></article>
           <article class="event"><time><b>05</b> აპრ</time><div><small>ოლიმპიადა</small><h3>რესპუბლიკური CS</h3><p>ალგორითმული ტური 🏅</p></div></article>
           <article class="event"><time><b>15</b> აპრ</time><div><small>ვებინარი</small><h3>AI საფუძვლები</h3><p>ონლაინ ლექცია 🎓</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="section section-fun" id="quiz">
+      <div class="container">
+        <div class="section-top">
+          <span class="tag tag-yellow">🧠 CS Quiz</span>
+          <h2>სწრაფი ცოდნის შემოწმება</h2>
+          <p class="section-desc">hover — ნახე პასუხი</p>
+        </div>
+        <div class="quiz-grid">
+          <article class="quiz-card">
+            <span class="quiz-num">Q1</span>
+            <h3>რა არის OOP?</h3>
+            <p class="quiz-answer">Object-Oriented Programming — ობიექტზე ორიენტირებული პროგრამირება</p>
+          </article>
+          <article class="quiz-card">
+            <span class="quiz-num">Q2</span>
+            <h3>HTML-ში რა ქმნის ბმულს?</h3>
+            <p class="quiz-answer">&lt;a href="..."&gt; — anchor tag</p>
+          </article>
+          <article class="quiz-card">
+            <span class="quiz-num">Q3</span>
+            <h3>Git-ში commit რა არის?</h3>
+            <p class="quiz-answer">კოდის ცვლილებების შენახვა ისტორიაში</p>
+          </article>
+          <article class="quiz-card">
+            <span class="quiz-num">Q4</span>
+            <h3>AI-ს საფუძველი?</h3>
+            <p class="quiz-answer">Machine Learning — მონაცემებზე სწავლა</p>
+          </article>
         </div>
       </div>
     </section>
