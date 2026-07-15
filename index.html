@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>კომპიუტერული მეცნიერება | cs.school.ge</title>
+  <meta name="description" content="სასკოლო საგნის ვებგვერდი — კომპიუტერული მეცნიერება">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-name">cs.school.ge</span>
+      </a>
+
+      <input type="checkbox" id="nav-open" class="nav-checkbox" aria-hidden="true">
+      <label for="nav-open" class="nav-toggle" aria-label="მენიუ"></label>
+
+      <nav class="site-nav">
+        <a href="#home">მთავარი</a>
+        <a href="#materials">სასწავლო მასალები</a>
+        <a href="#tasks">ამოცანები</a>
+        <a href="#projects">პროექტები</a>
+        <a href="#news">სიახლეები</a>
+        <a href="#teacher">მასწავლებლის კუთხე</a>
+        <a href="#contact">კონტაქტი</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="#contact">შესვლა</a>
+        <a class="btn btn-primary" href="#materials">რეგისტრაცია</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">სასკოლო საგნის ვებგვერდი</p>
+          <h1>კომპიუტერული მეცნიერება</h1>
+          <p class="lead">
+            სასწავლო პლატფორმა მოსწავლეებისთვის — პროგრამირება, ვებ-ტექნოლოგიები,
+            ალგორითმები და პრაქტიკული პროექტები ერთ სივრცეში.
+          </p>
+          <p class="path">პროგრამირება · ვები · კიბერუსაფრთხოება · ინოვაცია</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#materials">დაიწყე სწავლა</a>
+            <a class="btn btn-outline btn-lg" href="#projects">პროექტების გალერეა</a>
+          </div>
+          <p class="credit">ლიზა მამიტაშვილი</p>
+        </div>
+
+        <aside class="code-panel" aria-label="სასწავლო კოდის მაგალითი">
+          <div class="code-panel-bar">
+            <span></span><span></span><span></span>
+            <span class="code-panel-title">learn.py</span>
+          </div>
+          <pre><code><span class="tok-kw">def</span> <span class="tok-fn">learn_cs</span>():
+    topics = [<span class="tok-str">"Python"</span>, <span class="tok-str">"Web"</span>, <span class="tok-str">"Logic"</span>]
+    <span class="tok-kw">for</span> topic <span class="tok-kw">in</span> topics:
+        <span class="tok-fn">practice</span>(topic)
+    <span class="tok-kw">return</span> <span class="tok-str">"ინოვაცია"</span></code></pre>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="wrap stats-row">
+        <div class="stat">
+          <span class="stat-value">248</span>
+          <span class="stat-label">მოსწავლე</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">1 847</span>
+          <span class="stat-label">გადაჭრილი ამოცანა</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">156</span>
+          <span class="stat-label">პროექტი</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">42</span>
+          <span class="stat-label">ბეჯი</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">შესავალი</p>
+          <h2>რატომ კომპიუტერული მეცნიერება?</h2>
+        </header>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>მომავლის პროფესია</h3>
+            <p>IT სექტორი ერთ-ერთი ყველაზე სწრაფად მზარდი დარგია. კომპიუტერული მეცნიერების ცოდნა ხსნის გზას ახალ პროფესიულ შესაძლებლობებკენ.</p>
+          </article>
+          <article class="card">
+            <h3>ციფრული წიგნიერება</h3>
+            <p>ბიზნესი, მედიცინა, ხელოვნება და სხვა სფეროები დღეს ტექნოლოგიებზეა დამოკიდებული. ციფრული უნარები საჭირო ხდება ყველგან.</p>
+          </article>
+          <article class="card">
+            <h3>ლოგიკური აზროვნება</h3>
+            <p>პროგრამირება და ალგორითმები აძლიერებს ანალიტიკურ აზროვნებას — უნარს, რომელიც ყველა სწავლის მიმართულებაში გამოსადეგია.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="materials">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">სასწავლო მასალები</p>
+          <h2>სწავლის მიმართულებები</h2>
+          <p class="section-desc">აირჩიე თემა და გადადი შესაბამის გაკვეთილებზე</p>
+        </header>
+        <div class="card-grid categories">
+          <a class="card card-link" href="#materials">
+            <span class="card-tag">24 გაკვეთილი</span>
+            <h3>Python</h3>
+            <p>პროგრამირების საფუძვლები, სინტაქსი და პრაქტიკული ამოცანები.</p>
+          </a>
+          <a class="card card-link" href="#materials">
+            <span class="card-tag">18 გაკვეთილი</span>
+            <h3>ვებ-განვითარება</h3>
+            <p>HTML, CSS და ვებ-გვერდების აწყობის პრინციპები.</p>
+          </a>
+          <a class="card card-link" href="#materials">
+            <span class="card-tag">32 ამოცანა</span>
+            <h3>ალგორითმები</h3>
+            <p>ლოგიკა, მონაცემთა სტრუქტურები და ოლიმპიადური ამოცანები.</p>
+          </a>
+          <a class="card card-link" href="#materials">
+            <span class="card-tag">14 გაკვეთილი</span>
+            <h3>მონაცემთა ბაზები</h3>
+            <p>მონაცემების შენახვა, მოთხოვნები და ძირითადი SQL ცოდნა.</p>
+          </a>
+          <a class="card card-link" href="#materials">
+            <span class="card-tag">10 გაკვეთილი</span>
+            <h3>კიბერუსაფრთხოება</h3>
+            <p>უსაფრთხოების პრინციპები, პაროლები და ეთიკური ჰაკინგი.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">ფუნქციები</p>
+          <h2>პლატფორმის შესაძლებლობები</h2>
+        </header>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>ინტერაქტიური გაკვეთილები</h3>
+            <p>ვიდეო, ტექსტი და კოდის მაგალითები ერთ გვერდზე. Python-ის სწავლა პირდაპირ ბრაუზერში.</p>
+          </article>
+          <article class="card">
+            <h3>გეიმიფიკაცია</h3>
+            <p>ქულები, ბეჯები და ლიდერბორდი. ყოველი გადაჭრილი ამოცანა ასახავს პროგრესს.</p>
+          </article>
+          <article class="card">
+            <h3>სასწავლო ფორუმი</h3>
+            <p>კითხვების დასმა, პასუხების გაზიარება და ერთმანეთის დახმარება კლასის ფარგლებში.</p>
+          </article>
+          <article class="card">
+            <h3>სიახლეების განყოფილება</h3>
+            <p>კომპიუტერულ მეცნიერებასთან დაკავშირებული სიახლეები და ტექნოლოგიური განახლებები.</p>
+          </article>
+          <article class="card">
+            <h3>პროექტების გაზიარება</h3>
+            <p>მოსწავლეები ატვირთავენ პროექტებს და იღებენ გამოხმაურებას კლასელებისგან.</p>
+          </article>
+          <article class="card">
+            <h3>მობილური ვერსია</h3>
+            <p>საიტი მორგებულია სმარტფონებზე და ტაბლეტებზე — იგივე სტრუქტურა ყველა ეკრანზე.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">გამორჩეული</p>
+          <h2>კვირის საუკეთესო პროექტი</h2>
+        </header>
+        <div class="featured">
+          <div class="code-panel">
+            <div class="code-panel-bar">
+              <span></span><span></span><span></span>
+              <span class="code-panel-title">weather_app.py</span>
+            </div>
+            <pre><code><span class="tok-kw">import</span> requests
+
+<span class="tok-kw">def</span> <span class="tok-fn">get_weather</span>(city):
+    data = api.fetch(city)
+    <span class="tok-kw">return</span> data[<span class="tok-str">"temp"</span>]
+
+<span class="tok-fn">print</span>(<span class="tok-fn">get_weather</span>(<span class="tok-str">"თბილისი"</span>))</code></pre>
+          </div>
+          <div class="featured-body">
+            <p class="featured-label">კვირის პროექტი</p>
+            <h3>ამინდის აპლიკაცია</h3>
+            <p>
+              მოსწავლე გიორგი მ. შექმნა Python-ზე დაფუძნებულ აპლიკაციას API ინტეგრაციით.
+              პროექტი მოიცავს მომხმარებლის ინტერფეისს და რეალურ მონაცემებს.
+            </p>
+            <ul class="meta-list">
+              <li>ავტორი: გიორგი მ.</li>
+              <li>ენა: Python</li>
+              <li>შეფასება: 4.9</li>
+            </ul>
+            <a class="btn btn-primary" href="#projects">ნახე პროექტი</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tasks">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">ამოცანები და ქვიზები</p>
+          <h2>პრაქტიკული ამოცანები</h2>
+        </header>
+        <div class="card-grid three">
+          <article class="card task easy">
+            <span class="badge">მარტივი</span>
+            <h3>Hello World</h3>
+            <p>დაწერე პირველი პროგრამა Python-ში.</p>
+            <span class="points">+10 ქულა</span>
+          </article>
+          <article class="card task medium">
+            <span class="badge">საშუალო</span>
+            <h3>ფიბონაჩის რიგი</h3>
+            <p>ანგარიშება ალგორითმით.</p>
+            <span class="points">+25 ქულა</span>
+          </article>
+          <article class="card task hard">
+            <span class="badge">რთული</span>
+            <h3>გრაფის ძებნა</h3>
+            <p>BFS ალგორითმის იმპლემენტაცია.</p>
+            <span class="points">+50 ქულა</span>
+          </article>
+        </div>
+
+        <div class="leaderboard">
+          <h3>ლიდერბორდი</h3>
+          <ol>
+            <li><span class="place">1</span><span class="student">ანა კ.</span><span class="score">1 240 ქულა</span></li>
+            <li><span class="place">2</span><span class="student">ნიკა ბ.</span><span class="score">1 185 ქულა</span></li>
+            <li><span class="place">3</span><span class="student">მარიამ ლ.</span><span class="score">1 090 ქულა</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="events">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">ღონისძიებები</p>
+          <h2>ჰაკათონები, ოლიმპიადები, ვებინარები</h2>
+        </header>
+        <div class="card-grid three">
+          <article class="card event">
+            <time class="event-date" datetime="2026-03-22">
+              <span class="day">22</span>
+              <span class="month">მარ</span>
+            </time>
+            <div>
+              <p class="event-type">ჰაკათონი</p>
+              <h3>სკოლის CS ჰაკათონი 2026</h3>
+              <p>48-საათიანი პროექტის შეჯიბრი.</p>
+            </div>
+          </article>
+          <article class="card event">
+            <time class="event-date" datetime="2026-04-05">
+              <span class="day">05</span>
+              <span class="month">აპრ</span>
+            </time>
+            <div>
+              <p class="event-type">ოლიმპიადა</p>
+              <h3>რესპუბლიკური CS ოლიმპიადა</h3>
+              <p>ალგორითმური ამოცანების ტური.</p>
+            </div>
+          </article>
+          <article class="card event">
+            <time class="event-date" datetime="2026-04-15">
+              <span class="day">15</span>
+              <span class="month">აპრ</span>
+            </time>
+            <div>
+              <p class="event-type">ვებინარი</p>
+              <h3>ვებ-განვითარების საფუძვლები</h3>
+              <p>ონლაინ ლექცია HTML და CSS-ის შესახებ.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">სიახლეები</p>
+          <h2>ტექნოლოგიური განახლებები</h2>
+        </header>
+        <div class="card-grid three">
+          <article class="card news">
+            <p class="news-date">10 მარტი, 2026</p>
+            <h3>Python 3.13 — ახალი შესაძლებლობები</h3>
+            <p>გაეცანი უახლეს განახლებას და მის უპირატესობებს.</p>
+          </article>
+          <article class="card news">
+            <p class="news-date">5 მარტი, 2026</p>
+            <h3>HTML/CSS საფუძვლები სკოლაში</h3>
+            <p>როგორ დავიწყოთ ვებ-განვითარების სწავლა პირველი კლასიდან.</p>
+          </article>
+          <article class="card news">
+            <p class="news-date">1 მარტი, 2026</p>
+            <h3>კიბერუსაფრთხოების რჩევები</h3>
+            <p>პაროლების მართვა და უსაფრთხო ინტერნეტის გამოყენება.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="teacher">
+      <div class="wrap teacher-layout">
+        <div>
+          <p class="eyebrow">მასწავლებლის კუთხე</p>
+          <h2>სასწავლო გარემოს მართვა</h2>
+          <p>
+            მოსწავლისა და მასწავლებლის ანგარიშები, პროგრესის თვალყურის დევნება,
+            ვიდეო გაკვეთილების მართვა და სიმულაციები ერთ პანელში.
+          </p>
+          <ul class="check-list">
+            <li>მოსწავლეთა პროგრესის მონიტორინგი</li>
+            <li>გუნდური პროექტების მართვა</li>
+            <li>ვიდეო გაკვეთილების ატვირთვა</li>
+            <li>უსაფრთხო სიმულაციები</li>
+          </ul>
+          <a class="btn btn-primary" href="#teacher">მასწავლებლის პანელი</a>
+        </div>
+        <div class="panel">
+          <h3>კლასის სტატისტიკა</h3>
+          <div class="progress-row">
+            <span>9ა კლასი</span>
+            <div class="progress"><span style="width: 85%"></span></div>
+            <span>85%</span>
+          </div>
+          <div class="progress-row">
+            <span>10ბ კლასი</span>
+            <div class="progress"><span style="width: 72%"></span></div>
+            <span>72%</span>
+          </div>
+          <div class="progress-row">
+            <span>11 კლასი</span>
+            <div class="progress"><span style="width: 91%"></span></div>
+            <span>91%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap contact-box">
+        <h2>კონტაქტი</h2>
+        <p>კითხვის შემთხვევაში დაგვიკავშირდით ელ-ფოსტით.</p>
+        <p class="contact-email">
+          <a href="mailto:info@cs.school.ge">info@cs.school.ge</a>
+        </p>
+        <p class="contact-note">cs.school.ge — სასკოლო კომპიუტერული მეცნიერების პლატფორმა</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="#home">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-name">cs.school.ge</span>
+        </a>
+        <p>სკოლის ერთ-ერთი გამორჩეული საგნის გაცნობა ვებგვერდით.</p>
+      </div>
+      <div>
+        <h4>ნავიგაცია</h4>
+        <a href="#materials">სასწავლო მასალები</a>
+        <a href="#tasks">ამოცანები</a>
+        <a href="#projects">პროექტები</a>
+        <a href="#news">სიახლეები</a>
+      </div>
+      <div>
+        <h4>რესურსები</h4>
+        <a href="#events">ღონისძიებები</a>
+        <a href="#teacher">მასწავლებლის კუთხე</a>
+        <a href="#materials">ვიდეო გაკვეთილები</a>
+        <a href="#projects">გუნდური პროექტები</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© cs.school.ge — ლიზა მამიტაშვილი</p>
+      <p>კომპიუტერული მეცნიერება · პროგრამირება · ვები · კიბერუსაფრთხოება</p>
+    </div>
+  </footer>
+
+</body>
+</html>
