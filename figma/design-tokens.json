@@ -1,0 +1,57 @@
+{
+  "name": "CS School Design Tokens",
+  "description": "Import via Figma Tokens plugin or copy values into Figma Variables",
+  "colors": {
+    "tbc/primary": { "value": "#00AEF3", "type": "color" },
+    "tbc/primary-dark": { "value": "#0090cc", "type": "color" },
+    "ink/default": { "value": "#1c1c28", "type": "color" },
+    "ink/soft": { "value": "#5a5a72", "type": "color" },
+    "ink/muted": { "value": "#8888a0", "type": "color" },
+    "surface/paper": { "value": "#faf9f6", "type": "color" },
+    "surface/white": { "value": "#ffffff", "type": "color" },
+    "surface/line": { "value": "#e4e2dc", "type": "color" },
+    "accent/yellow": { "value": "#ffe566", "type": "color" },
+    "accent/coral": { "value": "#ff7b6b", "type": "color" },
+    "accent/mint": { "value": "#5eead4", "type": "color" },
+    "accent/purple": { "value": "#a78bfa", "type": "color" },
+    "accent/snake": { "value": "#06d6a0", "type": "color" },
+    "code/bg": { "value": "#1e1e2e", "type": "color" },
+    "code/topbar": { "value": "#181825", "type": "color" }
+  },
+  "typography": {
+    "font/body": { "value": "Noto Sans Georgian", "type": "fontFamily" },
+    "font/display": { "value": "Space Grotesk", "type": "fontFamily" },
+    "font/code": { "value": "JetBrains Mono", "type": "fontFamily" },
+    "size/h1": { "value": "60", "type": "fontSize" },
+    "size/h2": { "value": "35", "type": "fontSize" },
+    "size/body": { "value": "16", "type": "fontSize" },
+    "size/small": { "value": "14", "type": "fontSize" },
+    "size/tag": { "value": "12", "type": "fontSize" }
+  },
+  "spacing": {
+    "space/xs": { "value": "8", "type": "spacing" },
+    "space/sm": { "value": "12", "type": "spacing" },
+    "space/md": { "value": "16", "type": "spacing" },
+    "space/lg": { "value": "24", "type": "spacing" },
+    "space/xl": { "value": "48", "type": "spacing" },
+    "space/section": { "value": "88", "type": "spacing" }
+  },
+  "radius": {
+    "radius/sm": { "value": "10", "type": "borderRadius" },
+    "radius/md": { "value": "12", "type": "borderRadius" },
+    "radius/lg": { "value": "16", "type": "borderRadius" },
+    "radius/pill": { "value": "100", "type": "borderRadius" }
+  },
+  "border": {
+    "width/default": { "value": "2", "type": "borderWidth" },
+    "shadow/brutal": { "value": "4px 4px 0 #1c1c28", "type": "boxShadow" },
+    "shadow/brutal-sm": { "value": "3px 3px 0 #1c1c28", "type": "boxShadow" }
+  },
+  "layout": {
+    "max-width": { "value": "1120", "type": "sizing" },
+    "header-height": { "value": "76", "type": "sizing" },
+    "frame/desktop": { "value": "1440", "type": "sizing" },
+    "frame/tablet": { "value": "768", "type": "sizing" },
+    "frame/mobile": { "value": "390", "type": "sizing" }
+  }
+}
