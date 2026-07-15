@@ -7,7 +7,7 @@
   <meta name="description" content="სასკოლო საგნის ვებგვერდი — კომპიუტერული მეცნიერება">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,64 +22,76 @@
           <small>კომპიუტერული მეცნიერება</small>
         </span>
       </a>
-
       <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
       <label for="menu-toggle" class="menu-btn" aria-label="მენიუ"></label>
-
       <nav class="nav">
         <a href="#home">მთავარი</a>
+        <a href="#crew">გუნდი</a>
+        <a href="#code-lab">კოდი</a>
         <a href="#materials">მასალები</a>
         <a href="#tasks">ამოცანები</a>
         <a href="#projects">პროექტები</a>
-        <a href="#news">სიახლეები</a>
         <a href="#contact">კონტაქტი</a>
       </nav>
-
       <a class="btn btn-blue" href="#materials">დაიწყე სწავლა</a>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero" id="home">
       <div class="container hero-layout">
         <div class="hero-text">
-          <span class="tag tag-blue">სასკოლო საგნის ვებგვერდი</span>
+          <span class="tag tag-blue">🎉 სასკოლო CS პლატფორმა</span>
           <h1>კომპიუტერული<br><span class="highlight">მეცნიერება</span></h1>
           <p class="hero-desc">
-            პრაქტიკული სწავლა მოსწავლეებისთვის — Python, ვები, ალგორითმები,
-            პროექტები და ტექ-სიახლეები ერთ ადგილას.
+            ისწავლე კოდი სასიამოვნოდ! Python, HTML, JavaScript და რეალური პროექტები —
+            ჩვენი გუნდი დაგეხმარება ყოველ ნაბიჯზე.
           </p>
           <div class="hero-btns">
-            <a class="btn btn-blue btn-lg" href="#materials">დაიწყე სწავლა →</a>
-            <a class="btn btn-white btn-lg" href="#projects">პროექტები</a>
+            <a class="btn btn-blue btn-lg" href="#code-lab">ნახე კოდი →</a>
+            <a class="btn btn-white btn-lg" href="#crew">გაიცანი გუნდი</a>
           </div>
           <p class="author">ლიზა მამიტაშვილი</p>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-card card-yellow">
-            <span class="card-num">01</span>
-            <h3>Python</h3>
-            <p>24 გაკვეთილი</p>
+        <div class="hero-scene">
+          <div class="code-win code-win-hero">
+            <div class="code-top"><span></span><span></span><span></span> main.py</div>
+            <pre><code><span class="c-kw">print</span>(<span class="c-str">"გამარჯობა, CS!"</span>)
+
+<span class="c-kw">for</span> i <span class="c-kw">in</span> <span class="c-fn">range</span>(<span class="c-num">3</span>):
+    <span class="c-fn">print</span>(<span class="c-str">"🚀 კოდი = სიამოვნება"</span>)</code></pre>
           </div>
-          <div class="hero-card card-coral">
-            <span class="card-num">02</span>
-            <h3>Web Dev</h3>
-            <p>18 გაკვეთილი</p>
+          <div class="char char-bot" aria-hidden="true">
+            <svg viewBox="0 0 120 140" width="100" height="116">
+              <rect x="30" y="20" width="60" height="50" rx="12" fill="#00AEF3" stroke="#1c1c28" stroke-width="3"/>
+              <circle cx="48" cy="42" r="6" fill="#fff"/><circle cx="72" cy="42" r="6" fill="#fff"/>
+              <circle cx="48" cy="42" r="3" fill="#1c1c28"/><circle cx="72" cy="42" r="3" fill="#1c1c28"/>
+              <rect x="42" y="54" width="36" height="6" rx="3" fill="#1c1c28"/>
+              <rect x="40" y="70" width="40" height="45" rx="10" fill="#ffe566" stroke="#1c1c28" stroke-width="3"/>
+              <rect x="20" y="78" width="18" height="30" rx="8" fill="#ff7b6b" stroke="#1c1c28" stroke-width="3"/>
+              <rect x="82" y="78" width="18" height="30" rx="8" fill="#ff7b6b" stroke="#1c1c28" stroke-width="3"/>
+            </svg>
+            <span class="char-name">ByteBot</span>
           </div>
-          <div class="hero-card card-mint">
-            <span class="card-num">03</span>
-            <h3>Algorithms</h3>
-            <p>32 ამოცანა</p>
+          <div class="char char-snake" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="80" height="80">
+              <ellipse cx="50" cy="55" rx="35" ry="28" fill="#06d6a0" stroke="#1c1c28" stroke-width="3"/>
+              <circle cx="38" cy="48" r="5" fill="#fff"/><circle cx="38" cy="48" r="2.5" fill="#1c1c28"/>
+              <circle cx="58" cy="48" r="5" fill="#fff"/><circle cx="58" cy="48" r="2.5" fill="#1c1c28"/>
+              <rect x="42" y="58" width="16" height="4" rx="2" fill="#1c1c28"/>
+              <path d="M15 55 Q5 30 30 25" fill="none" stroke="#06d6a0" stroke-width="8" stroke-linecap="round"/>
+            </svg>
+            <span class="char-name">PySnake</span>
           </div>
-          <div class="hero-sticker">
-            <img src="tbc-logo.png" alt="" width="56" height="56">
-            <span>CS → AI → კიბერ</span>
-          </div>
+          <div class="bubble bubble-1">print("Hello!") 🐍</div>
+          <div class="bubble bubble-2">&lt;/&gt; Let's code!</div>
         </div>
       </div>
     </section>
 
+    <!-- STATS -->
     <section class="stats-bar">
       <div class="container stats-grid">
         <div class="stat-item"><strong>248</strong><span>მოსწავლე</span></div>
@@ -89,6 +101,162 @@
       </div>
     </section>
 
+    <!-- CREW / CHARACTERS -->
+    <section class="section section-fun" id="crew">
+      <div class="container">
+        <div class="section-top">
+          <span class="tag tag-coral">🎭 CS გუნდი</span>
+          <h2>გაიცანი ჩვენი პერსონაჟები!</h2>
+          <p class="section-desc">ყოველი მათგანი გისწავლის სხვადასხვა თემას</p>
+        </div>
+        <div class="crew-grid">
+          <article class="crew-card">
+            <div class="crew-char">
+              <svg viewBox="0 0 120 140" width="90" height="105">
+                <rect x="30" y="20" width="60" height="50" rx="12" fill="#00AEF3" stroke="#1c1c28" stroke-width="3"/>
+                <circle cx="48" cy="42" r="5" fill="#fff"/><circle cx="72" cy="42" r="5" fill="#fff"/>
+                <circle cx="48" cy="42" r="2.5" fill="#1c1c28"/><circle cx="72" cy="42" r="2.5" fill="#1c1c28"/>
+                <rect x="40" y="70" width="40" height="45" rx="10" fill="#ffe566" stroke="#1c1c28" stroke-width="3"/>
+              </svg>
+            </div>
+            <h3>ByteBot 🤖</h3>
+            <p class="crew-role">Python მასწავლებელი</p>
+            <p>გიჩვენებს loops, functions და variables-ს მარტივად.</p>
+            <div class="crew-code">
+              <code><span class="c-kw">def</span> <span class="c-fn">hi</span>(): <span class="c-kw">return</span> <span class="c-str">"👋"</span></code>
+            </div>
+          </article>
+          <article class="crew-card">
+            <div class="crew-char">
+              <svg viewBox="0 0 100 110" width="80" height="88">
+                <ellipse cx="50" cy="60" rx="32" ry="26" fill="#06d6a0" stroke="#1c1c28" stroke-width="3"/>
+                <circle cx="40" cy="54" r="4" fill="#fff"/><circle cx="60" cy="54" r="4" fill="#fff"/>
+                <circle cx="40" cy="54" r="2" fill="#1c1c28"/><circle cx="60" cy="54" r="2" fill="#1c1c28"/>
+                <path d="M18 58 Q8 35 28 28" fill="none" stroke="#06d6a0" stroke-width="7" stroke-linecap="round"/>
+                <text x="38" y="72" font-size="14">🐍</text>
+              </svg>
+            </div>
+            <h3>PySnake 🐍</h3>
+            <p class="crew-role">ალგორითმების გური</p>
+            <p>ფიბონაჩი, sorting და ოლიმპიადური ამოცანები.</p>
+            <div class="crew-code">
+              <code><span class="c-kw">for</span> n <span class="c-kw">in</span> nums: <span class="c-fn">sort</span>(n)</code>
+            </div>
+          </article>
+          <article class="crew-card">
+            <div class="crew-char">
+              <svg viewBox="0 0 100 110" width="80" height="88">
+                <ellipse cx="50" cy="65" rx="28" ry="24" fill="#a78bfa" stroke="#1c1c28" stroke-width="3"/>
+                <polygon points="30,30 50,15 70,30 65,45 35,45" fill="#a78bfa" stroke="#1c1c28" stroke-width="3"/>
+                <circle cx="42" cy="62" r="4" fill="#fff"/><circle cx="58" cy="62" r="4" fill="#fff"/>
+                <circle cx="42" cy="62" r="2" fill="#1c1c28"/><circle cx="58" cy="62" r="2" fill="#1c1c28"/>
+                <path d="M44 72 Q50 78 56 72" fill="none" stroke="#1c1c28" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>WebCat 🐱</h3>
+            <p class="crew-role">HTML & CSS ექსპერტი</p>
+            <p>ვებ-გვერდების აწყობა და ლამაზი დიზაინი.</p>
+            <div class="crew-code">
+              <code>&lt;<span class="c-tag">div</span> <span class="c-attr">class</span>=<span class="c-str">"cool"</span>&gt;</code>
+            </div>
+          </article>
+          <article class="crew-card">
+            <div class="crew-char">
+              <svg viewBox="0 0 100 110" width="80" height="88">
+                <ellipse cx="50" cy="58" rx="30" ry="28" fill="#ff7b6b" stroke="#1c1c28" stroke-width="3"/>
+                <circle cx="50" cy="35" r="22" fill="#ff7b6b" stroke="#1c1c28" stroke-width="3"/>
+                <circle cx="42" cy="32" r="8" fill="#fff"/><circle cx="58" cy="32" r="8" fill="#fff"/>
+                <circle cx="42" cy="32" r="4" fill="#1c1c28"/><circle cx="58" cy="32" r="4" fill="#1c1c28"/>
+                <polygon points="35,20 40,8 45,20" fill="#ffe566" stroke="#1c1c28" stroke-width="2"/>
+                <polygon points="55,20 60,8 65,20" fill="#ffe566" stroke="#1c1c28" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>AlgoOwl 🦉</h3>
+            <p class="crew-role">AI & Cyber გური</p>
+            <p>ხელოვნური ინტელექტი და უსაფრთხოება.</p>
+            <div class="crew-code">
+              <code><span class="c-kw">if</span> secure: <span class="c-fn">encrypt</span>()</code>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CODE LAB -->
+    <section class="section section-soft" id="code-lab">
+      <div class="container">
+        <div class="section-top">
+          <span class="tag tag-yellow">💻 კოდის ლაბორატორია</span>
+          <h2>რეალური კოდის მაგალითები</h2>
+          <p class="section-desc">ასე გამოიყურება კოდი პრაქტიკაში</p>
+        </div>
+        <div class="code-mosaic">
+          <div class="code-win">
+            <div class="code-top"><span></span><span></span><span></span> hello.py</div>
+            <pre><code><span class="c-com"># პირველი პროგრამა</span>
+name = <span class="c-str">"ანა"</span>
+<span class="c-kw">print</span>(<span class="c-str">f"გამარჯობა, </span>{name}<span class="c-str">!"</span>)
+<span class="c-kw">print</span>(<span class="c-num">2</span> + <span class="c-num">2</span>)  <span class="c-com"># → 4</span></code></pre>
+          </div>
+          <div class="code-win">
+            <div class="code-top"><span></span><span></span><span></span> index.html</div>
+            <pre><code><span class="c-tag">&lt;!DOCTYPE html&gt;</span>
+<span class="c-tag">&lt;html</span> <span class="c-attr">lang</span>=<span class="c-str">"ka"</span><span class="c-tag">&gt;</span>
+<span class="c-tag">&lt;head&gt;</span>
+  <span class="c-tag">&lt;title&gt;</span>CS School<span class="c-tag">&lt;/title&gt;</span>
+<span class="c-tag">&lt;/head&gt;</span>
+<span class="c-tag">&lt;body&gt;</span>
+  <span class="c-tag">&lt;h1&gt;</span>კომპიუტერული მეცნიერება<span class="c-tag">&lt;/h1&gt;</span>
+<span class="c-tag">&lt;/body&gt;</span>
+<span class="c-tag">&lt;/html&gt;</span></code></pre>
+          </div>
+          <div class="code-win">
+            <div class="code-top"><span></span><span></span><span></span> style.css</div>
+            <pre><code><span class="c-tag">.card</span> {
+  <span class="c-attr">background</span>: <span class="c-str">#ffe566</span>;
+  <span class="c-attr">border</span>: <span class="c-num">2px</span> solid <span class="c-str">#1c1c28</span>;
+  <span class="c-attr">border-radius</span>: <span class="c-num">16px</span>;
+  <span class="c-attr">box-shadow</span>: <span class="c-num">4px 4px</span> <span class="c-num">0</span> <span class="c-str">#1c1c28</span>;
+}</code></pre>
+          </div>
+          <div class="code-win">
+            <div class="code-top"><span></span><span></span><span></span> app.js</div>
+            <pre><code><span class="c-kw">const</span> btn = <span class="c-fn">document</span>.<span class="c-fn">querySelector</span>(<span class="c-str">".btn"</span>);
+
+btn.<span class="c-fn">addEventListener</span>(<span class="c-str">"click"</span>, () => {
+  <span class="c-fn">alert</span>(<span class="c-str">"კოდი მუშაობს! 🎉"</span>);
+});</code></pre>
+          </div>
+          <div class="code-win code-win-wide">
+            <div class="code-top"><span></span><span></span><span></span> fibonacci.py</div>
+            <pre><code><span class="c-kw">def</span> <span class="c-fn">fibonacci</span>(n):
+    a, b = <span class="c-num">0</span>, <span class="c-num">1</span>
+    result = []
+    <span class="c-kw">for</span> _ <span class="c-kw">in</span> <span class="c-fn">range</span>(n):
+        result.<span class="c-fn">append</span>(a)
+        a, b = b, a + b
+    <span class="c-kw">return</span> result
+
+<span class="c-fn">print</span>(<span class="c-fn">fibonacci</span>(<span class="c-num">10</span>))
+<span class="c-com"># [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]</span></code></pre>
+          </div>
+          <div class="code-win">
+            <div class="code-top"><span></span><span></span><span></span> game.py</div>
+            <pre><code><span class="c-kw">import</span> random
+
+secret = random.<span class="c-fn">randint</span>(<span class="c-num">1</span>, <span class="c-num">100</span>)
+guess = <span class="c-fn">int</span>(<span class="c-fn">input</span>(<span class="c-str">"გამოიცანი: "</span>))
+
+<span class="c-kw">if</span> guess == secret:
+    <span class="c-fn">print</span>(<span class="c-str">"🎉 სწორია!"</span>)
+<span class="c-kw">else</span>:
+    <span class="c-fn">print</span>(<span class="c-str">"სცადე ისევ!"</span>)</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
     <section class="section" id="why">
       <div class="container">
         <div class="section-top">
@@ -96,25 +264,14 @@
           <h2>რატომ კომპიუტერული მეცნიერება?</h2>
         </div>
         <div class="grid-3">
-          <article class="box">
-            <div class="box-icon blue">💼</div>
-            <h3>მომავლის პროფესია</h3>
-            <p>IT სექტორი ყველაზე სწრაფად მზარდი დარგია. CS-ის ცოდნა ხსნის გზას ათასობით შესაძლებლობისკენ.</p>
-          </article>
-          <article class="box">
-            <div class="box-icon yellow">🌐</div>
-            <h3>ციფრული წიგნიერება</h3>
-            <p>ბიზნესი, მედიცინა, ხელოვნება — ყველა სფერო დღეს ტექნოლოგიებზეა დაყრდნობილი.</p>
-          </article>
-          <article class="box">
-            <div class="box-icon mint">🧠</div>
-            <h3>ლოგიკური აზროვნება</h3>
-            <p>პროგრამირება აძლიერებს ანალიტიკურ აზროვნებას — უნარს, რომელიც ყველგან გამოსადეგია.</p>
-          </article>
+          <article class="box"><div class="box-icon blue">💼</div><h3>მომავლის პროფესია</h3><p>IT სექტორი ყველაზე სწრაფად მზარდი დარგია.</p></article>
+          <article class="box"><div class="box-icon yellow">🌐</div><h3>ციფრული წიგნიერება</h3><p>ტექნოლოგიები ყველა სფეროშია საჭირო.</p></article>
+          <article class="box"><div class="box-icon mint">🧠</div><h3>ლოგიკური აზროვნება</h3><p>პროგრამირება აძლიერებს ანალიტიკას.</p></article>
         </div>
       </div>
     </section>
 
+    <!-- MATERIALS -->
     <section class="section section-soft" id="materials">
       <div class="container">
         <div class="section-top">
@@ -122,50 +279,36 @@
           <h2>აირჩიე მიმართულება</h2>
         </div>
         <div class="topics">
-          <a class="topic topic-py" href="#materials">
+          <a class="topic topic-py" href="#code-lab">
             <span class="topic-emoji">🐍</span>
-            <div>
-              <h3>Python</h3>
-              <p>24 გაკვეთილი · საფუძვლები</p>
-            </div>
-            <span class="topic-arrow">→</span>
+            <div><h3>Python</h3><p>24 გაკვეთილი</p></div>
+            <code class="topic-snippet">print("Hello!")</code>
           </a>
-          <a class="topic topic-web" href="#materials">
+          <a class="topic topic-web" href="#code-lab">
             <span class="topic-emoji">🌍</span>
-            <div>
-              <h3>Web Dev</h3>
-              <p>18 გაკვეთილი · HTML, CSS, JS</p>
-            </div>
-            <span class="topic-arrow">→</span>
+            <div><h3>Web Dev</h3><p>HTML, CSS, JS</p></div>
+            <code class="topic-snippet">&lt;h1&gt;CS&lt;/h1&gt;</code>
           </a>
-          <a class="topic topic-algo" href="#materials">
+          <a class="topic topic-algo" href="#code-lab">
             <span class="topic-emoji">⚡</span>
-            <div>
-              <h3>ალგორითმები</h3>
-              <p>32 ამოცანა · ლოგიკა</p>
-            </div>
-            <span class="topic-arrow">→</span>
+            <div><h3>ალგორითმები</h3><p>32 ამოცანა</p></div>
+            <code class="topic-snippet">O(n log n)</code>
           </a>
-          <a class="topic topic-ai" href="#materials">
+          <a class="topic topic-ai" href="#code-lab">
             <span class="topic-emoji">🤖</span>
-            <div>
-              <h3>AI</h3>
-              <p>12 გაკვეთილი · ML საფუძვლები</p>
-            </div>
-            <span class="topic-arrow">→</span>
+            <div><h3>AI</h3><p>12 გაკვეთილი</p></div>
+            <code class="topic-snippet">model.train()</code>
           </a>
-          <a class="topic topic-cyber" href="#materials">
+          <a class="topic topic-cyber" href="#code-lab">
             <span class="topic-emoji">🔒</span>
-            <div>
-              <h3>კიბერუსაფრთხოება</h3>
-              <p>10 გაკვეთილი · ეთიკა</p>
-            </div>
-            <span class="topic-arrow">→</span>
+            <div><h3>კიბერუსაფრთხოება</h3><p>10 გაკვეთილი</p></div>
+            <code class="topic-snippet">hash(password)</code>
           </a>
         </div>
       </div>
     </section>
 
+    <!-- FEATURES -->
     <section class="section" id="features">
       <div class="container">
         <div class="section-top">
@@ -173,21 +316,16 @@
           <h2>რა შეგიძლია აქ?</h2>
         </div>
         <div class="features-grid">
-          <article class="feature f-wide">
-            <h3>📹 ინტერაქტიური გაკვეთილები</h3>
-            <p>ვიდეო, ტექსტი და კოდის მაგალითები ერთ გვერდზე.</p>
-          </article>
-          <article class="feature"><h3>🎮 გეიმიფიკაცია</h3><p>ქულები, ბეჯები, ლიდერბორდი.</p></article>
-          <article class="feature"><h3>📰 CSNews</h3><p>ტექ-სიახლეები და განახლებები.</p></article>
-          <article class="feature"><h3>🔗 GitHub</h3><p>პროექტების გაზიარება და review.</p></article>
-          <article class="feature f-wide">
-            <h3>📱 მობილური ვერსია</h3>
-            <p>სრული responsive დიზაინი — კომპიუტერიდან და ტელეფონიდან.</p>
-          </article>
+          <article class="feature f-wide"><h3>📹 ინტერაქტიური გაკვეთილები</h3><p>ვიდეო + კოდი ერთ გვერდზე.</p></article>
+          <article class="feature"><h3>🎮 გეიმიფიკაცია</h3><p>ქულები და ბეჯები.</p></article>
+          <article class="feature"><h3>📰 CSNews</h3><p>ტექ-სიახლეები.</p></article>
+          <article class="feature"><h3>🔗 GitHub</h3><p>პროექტების გაზიარება.</p></article>
+          <article class="feature f-wide"><h3>📱 მობილური ვერსია</h3><p>სრული responsive დიზაინი.</p></article>
         </div>
       </div>
     </section>
 
+    <!-- PROJECT -->
     <section class="section section-soft" id="projects">
       <div class="container">
         <div class="section-top">
@@ -195,68 +333,112 @@
           <h2>კვირის საუკეთესო პროექტი</h2>
         </div>
         <div class="project-spotlight">
-          <div class="project-code">
+          <div class="code-win">
             <div class="code-top"><span></span><span></span><span></span> weather_app.py</div>
             <pre><code><span class="c-kw">import</span> requests
 
-<span class="c-kw">def</span> <span class="c-fn">get_weather</span>(city):
-    data = api.fetch(city)
-    <span class="c-kw">return</span> data[<span class="c-str">"temp"</span>]
+API = <span class="c-str">"https://api.weather.com"</span>
 
-<span class="c-fn">print</span>(<span class="c-fn">get_weather</span>(<span class="c-str">"თბილისი"</span>))</code></pre>
+<span class="c-kw">def</span> <span class="c-fn">get_weather</span>(city):
+    resp = requests.<span class="c-fn">get</span>(API, params={
+        <span class="c-str">"q"</span>: city,
+        <span class="c-str">"units"</span>: <span class="c-str">"metric"</span>
+    })
+    data = resp.<span class="c-fn">json</span>()
+    <span class="c-kw">return</span> data[<span class="c-str">"main"</span>][<span class="c-str">"temp"</span>]
+
+temp = <span class="c-fn">get_weather</span>(<span class="c-str">"თბილისი"</span>)
+<span class="c-fn">print</span>(<span class="c-str">f"🌤 </span>{temp}<span class="c-str">°C</span>")</code></pre>
           </div>
           <div class="project-info">
             <span class="tag tag-yellow">⭐ კვირის პროექტი</span>
             <h3>ამინდის აპლიკაცია</h3>
-            <p>მოსწავლე გიორგი მ. შექმნა Python-ზე დაფუძნებულ აპლიკაციას API ინტეგრაციით.</p>
-            <div class="chips">
-              <span>გიორგი მ.</span>
-              <span>Python</span>
-              <span>⭐ 4.9</span>
+            <p>გიორგი მ. შექმნა სრული Python აპი რეალ API-ით!</p>
+            <div class="chips"><span>👤 გიორგი მ.</span><span>🐍 Python</span><span>⭐ 4.9</span></div>
+            <div class="project-char">
+              <svg viewBox="0 0 60 70" width="50" height="58">
+                <circle cx="30" cy="22" r="14" fill="#ffe566" stroke="#1c1c28" stroke-width="2"/>
+                <circle cx="25" cy="20" r="2" fill="#1c1c28"/><circle cx="35" cy="20" r="2" fill="#1c1c28"/>
+                <path d="M26 26 Q30 30 34 26" fill="none" stroke="#1c1c28" stroke-width="1.5"/>
+                <rect x="18" y="36" width="24" height="28" rx="6" fill="#00AEF3" stroke="#1c1c28" stroke-width="2"/>
+              </svg>
+              <span>„API-ს დავუკავშირდი პირველად!" — გიორგი</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="tasks">
+    <!-- TASKS - renamed, with real code -->
+    <section class="section section-fun" id="tasks">
       <div class="container">
         <div class="section-top">
-          <span class="tag tag-mint">ამოცანები</span>
-          <h2>გამოიცადე თავი</h2>
+          <span class="tag tag-mint">🧩 ამოცანები</span>
+          <h2>კოდის გამოცნობა & პრაქტიკა</h2>
+          <p class="section-desc">ყოველი ამოცანა რეალური კოდით</p>
         </div>
-        <div class="grid-3">
-          <article class="task task-easy">
-            <span class="level">მარტივი</span>
-            <h3>Hello World</h3>
-            <p>პირველი პროგრამა Python-ში</p>
-            <span class="pts">+10 ქულა</span>
+        <div class="task-cards">
+          <article class="task-card task-easy">
+            <div class="task-head">
+              <span class="level">მარტივი · +10 ქულა</span>
+              <h3>Hello World 👋</h3>
+            </div>
+            <div class="code-win code-win-sm">
+              <div class="code-top"><span></span><span></span><span></span> task1.py</div>
+              <pre><code><span class="c-fn">print</span>(<span class="c-str">"Hello, World!"</span>)
+<span class="c-fn">print</span>(<span class="c-str">"მე ვსწავლობ CS-ს 🎉"</span>)</code></pre>
+            </div>
+            <p>დაწერე და გაუშვი პირველი პროგრამა.</p>
           </article>
-          <article class="task task-mid">
-            <span class="level">საშუალო</span>
-            <h3>ფიბონაჩის რიგი</h3>
-            <p>ანგარიშება ალგორითმით</p>
-            <span class="pts">+25 ქულა</span>
+          <article class="task-card task-mid">
+            <div class="task-head">
+              <span class="level">საშუალო · +25 ქულა</span>
+              <h3>ფიბონაჩის რიგი 🔢</h3>
+            </div>
+            <div class="code-win code-win-sm">
+              <div class="code-top"><span></span><span></span><span></span> task2.py</div>
+              <pre><code>a, b = <span class="c-num">0</span>, <span class="c-num">1</span>
+<span class="c-kw">for</span> i <span class="c-kw">in</span> <span class="c-fn">range</span>(<span class="c-num">8</span>):
+    <span class="c-fn">print</span>(a, end=<span class="c-str">" "</span>)
+    a, b = b, a + b</code></pre>
+            </div>
+            <p>ანგარიშება loop-ით.</p>
           </article>
-          <article class="task task-hard">
-            <span class="level">რთული</span>
-            <h3>გრაფის ძებნა</h3>
-            <p>BFS ალგორითმი</p>
-            <span class="pts">+50 ქულა</span>
+          <article class="task-card task-hard">
+            <div class="task-head">
+              <span class="level">რთული · +50 ქულა</span>
+              <h3>BFS ძებნა 🗺</h3>
+            </div>
+            <div class="code-win code-win-sm">
+              <div class="code-top"><span></span><span></span><span></span> task3.py</div>
+              <pre><code><span class="c-kw">from</span> collections <span class="c-kw">import</span> deque
+
+<span class="c-kw">def</span> <span class="c-fn">bfs</span>(graph, start):
+    visited = {start}
+    queue = deque([start])
+    <span class="c-kw">while</span> queue:
+        node = queue.<span class="c-fn">popleft</span>()
+        <span class="c-kw">for</span> n <span class="c-kw">in</span> graph[node]:
+            <span class="c-kw">if</span> n <span class="c-kw">not</span> <span class="c-kw">in</span> visited:
+                visited.<span class="c-fn">add</span>(n)
+                queue.<span class="c-fn">append</span>(n)</code></pre>
+            </div>
+            <p>გრაფის ალგორითმი.</p>
           </article>
         </div>
 
         <div class="leaderboard">
           <h3>🏆 ლიდერბორდი</h3>
           <ol>
-            <li><em>1</em><span>ანა კ.</span><strong>1 240</strong></li>
-            <li><em>2</em><span>ნიკა ბ.</span><strong>1 185</strong></li>
-            <li><em>3</em><span>მარიამ ლ.</span><strong>1 090</strong></li>
+            <li><em>1</em><span>ანა კ. 🥇</span><strong>1 240</strong></li>
+            <li><em>2</em><span>ნიკა ბ. 🥈</span><strong>1 185</strong></li>
+            <li><em>3</em><span>მარიამ ლ. 🥉</span><strong>1 090</strong></li>
           </ol>
         </div>
       </div>
     </section>
 
+    <!-- EVENTS -->
     <section class="section section-soft" id="events">
       <div class="container">
         <div class="section-top">
@@ -264,22 +446,14 @@
           <h2>ჰაკათონები & ოლიმპიადები</h2>
         </div>
         <div class="grid-3">
-          <article class="event">
-            <time><b>22</b> მარ</time>
-            <div><small>ჰაკათონი</small><h3>CS ჰაკათონი 2026</h3><p>48-საათიანი შეჯიბრი</p></div>
-          </article>
-          <article class="event">
-            <time><b>05</b> აპრ</time>
-            <div><small>ოლიმპიადა</small><h3>რესპუბლიკური CS</h3><p>ალგორითმული ტური</p></div>
-          </article>
-          <article class="event">
-            <time><b>15</b> აპრ</time>
-            <div><small>ვებინარი</small><h3>AI საფუძვლები</h3><p>ონლაინ ლექცია</p></div>
-          </article>
+          <article class="event"><time><b>22</b> მარ</time><div><small>ჰაკათონი</small><h3>CS ჰაკათონი 2026</h3><p>48-საათიანი შეჯიბრი 💻</p></div></article>
+          <article class="event"><time><b>05</b> აპრ</time><div><small>ოლიმპიადა</small><h3>რესპუბლიკური CS</h3><p>ალგორითმული ტური 🏅</p></div></article>
+          <article class="event"><time><b>15</b> აპრ</time><div><small>ვებინარი</small><h3>AI საფუძვლები</h3><p>ონლაინ ლექცია 🎓</p></div></article>
         </div>
       </div>
     </section>
 
+    <!-- NEWS -->
     <section class="section" id="news">
       <div class="container">
         <div class="section-top">
@@ -287,36 +461,24 @@
           <h2>ტექ-სიახლეები</h2>
         </div>
         <div class="grid-3">
-          <article class="news n-blue">
-            <time>10 მარტი</time>
-            <h3>Python 3.13</h3>
-            <p>ახალი შესაძლებლობები და განახლებები.</p>
-          </article>
-          <article class="news n-purple">
-            <time>5 მარტი</time>
-            <h3>AI სკოლაში</h3>
-            <p>როგორ ვისწავლოთ ეთიკურად.</p>
-          </article>
-          <article class="news n-mint">
-            <time>1 მარტი</time>
-            <h3>კიბერუსაფრთხოება</h3>
-            <p>5 რჩევა უსაფრთხო ინტერნეტისთვის.</p>
-          </article>
+          <article class="news n-blue"><time>10 მარტი</time><h3>Python 3.13 🐍</h3><p>ახალი შესაძლებლობები.</p></article>
+          <article class="news n-purple"><time>5 მარტი</time><h3>AI სკოლაში 🤖</h3><p>ეთიკური სწავლება.</p></article>
+          <article class="news n-mint"><time>1 მარტი</time><h3>კიბერუსაფრთხოება 🔒</h3><p>5 რჩევა.</p></article>
         </div>
       </div>
     </section>
 
+    <!-- TEACHER -->
     <section class="section section-soft" id="teacher">
       <div class="container teacher-split">
         <div>
           <span class="tag tag-yellow">მასწავლებლის კუთხე</span>
           <h2>სასწავლო გარემოს მართვა</h2>
-          <p>მოსწავლისა და მასწავლებლის ანგარიშები, პროგრესის მონიტორინგი და სიმულაციები.</p>
+          <p>პროგრესი, პროექტები და სიმულაციები ერთ პანელში.</p>
           <ul class="checks">
             <li>მოსწავლეთა პროგრესი</li>
             <li>გუნდური პროექტები</li>
             <li>ვიდეო გაკვეთილები</li>
-            <li>უსაფრთხო სიმულაციები</li>
           </ul>
         </div>
         <div class="panel-stats">
@@ -328,11 +490,12 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="container contact-card">
         <img src="tbc-logo.png" alt="TBC" class="contact-logo" width="64" height="64">
-        <h2>დაგვიკავშირდი</h2>
-        <p>კითხვის შემთხვევაში მოგვწერე</p>
+        <h2>დაგვიკავშირდი 📬</h2>
+        <p>კითხვა გაქვს? მოგვწერე!</p>
         <a class="btn btn-blue btn-lg" href="mailto:info@cs.school.ge">info@cs.school.ge</a>
       </div>
     </section>
@@ -342,21 +505,18 @@
     <div class="container footer-row">
       <div class="footer-brand">
         <img src="tbc-logo.png" alt="TBC" width="48" height="48">
-        <div>
-          <strong>cs.school.ge</strong>
-          <p>სკოლის CS საგნის პლატფორმა</p>
-        </div>
+        <div><strong>cs.school.ge</strong><p>სკოლის CS პლატფორმა</p></div>
       </div>
       <div class="footer-links">
+        <a href="#crew">გუნდი</a>
+        <a href="#code-lab">კოდი</a>
         <a href="#materials">მასალები</a>
         <a href="#tasks">ამოცანები</a>
-        <a href="#projects">პროექტები</a>
-        <a href="#news">სიახლეები</a>
       </div>
     </div>
     <div class="container footer-copy">
       <p>© cs.school.ge — ლიზა მამიტაშვილი</p>
-      <p>CS → AI → კიბერ → ინოვაცია</p>
+      <p>CS → AI → კიბერ → ინოვაცია 🚀</p>
     </div>
   </footer>
 
